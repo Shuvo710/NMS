@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd.edu.seu.nursery_management_system.controller.CustomerProfileController">
+   <children>
+      <AnchorPane layoutX="-7.0" layoutY="-2.0" prefHeight="60.0" prefWidth="610.0" style="-fx-background-color: #008000;">
+         <children>
+            <Label layoutX="71.0" layoutY="20.0" text="Customer " textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="55.0" fitWidth="50.0" layoutX="15.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/profile1-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-3.0" layoutY="56.0" prefHeight="346.0" prefWidth="129.0" style="-fx-background-color: #foo800;" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="-3.0" AnchorPane.topAnchor="56.0">
+         <children>
+            <Label layoutX="12.0" layoutY="29.0" text="Welcome," />
+            <Label layoutX="78.0" layoutY="29.0" text="Shuvo">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="126.0" layoutY="56.0" prefHeight="346.0" prefWidth="291.0">
+         <children>
+            <TableView fx:id="productTable" layoutY="48.0" prefHeight="200.0" prefWidth="291.0">
+              <columns>
+                <TableColumn fx:id="productId" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="productName" prefWidth="154.0" text="Name" />
+                  <TableColumn fx:id="productPrice" prefWidth="61.0" text="Price" />
+              </columns>
+            </TableView>
+            <Label layoutX="51.0" layoutY="14.0" text="Product Table" />
+            <Label alignment="CENTER" layoutX="42.0" layoutY="278.0" onMouseClicked="#addToCart" prefHeight="33.0" prefWidth="88.0" style="-fx-background-color: #008000;" text="Add" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="146.0" layoutY="286.0" text="Quantity:" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="416.0" layoutY="56.0" prefHeight="346.0" prefWidth="187.0">
+         <children>
+            <TableView fx:id="cart" layoutY="3.0" prefHeight="142.0" prefWidth="187.0">
+              <columns>
+                <TableColumn fx:id="cName" prefWidth="92.0" text="Name" />
+                <TableColumn fx:id="cQuantity" prefWidth="94.0" text="Quantity" />
+              </columns>
+            </TableView>
+            <Label layoutX="31.0" layoutY="164.0" text="Total:" />
+            <Label fx:id="totalPayable" layoutX="69.0" layoutY="164.0" text="0.0" />
+            <Label layoutX="32.0" layoutY="186.0" text="Amount:" />
+            <Label layoutX="33.0" layoutY="207.0" text="Change:" />
+            <Label fx:id="change" layoutX="90.0" layoutY="207.0" text="0.0" />
+            <Label alignment="CENTER" layoutX="25.0" layoutY="254.0" onMouseClicked="#confirm" prefHeight="33.0" prefWidth="143.0" style="-fx-background-color: #008000;" text="Confirm" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="pay" layoutX="89.0" layoutY="182.0" onKeyTyped="#change" prefHeight="26.0" prefWidth="80.0" text="0.0" />
+            <TextField fx:id="quantity" layoutX="-81.0" layoutY="282.0" prefHeight="26.0" prefWidth="60.0" text="1" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="39.0" fitWidth="43.0" layoutX="49.0" layoutY="347.0" onMouseClicked="#logout" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/logout.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

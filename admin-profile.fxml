@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd.edu.seu.nursery_management_system.controller.AdminProfileController">
+   <children>
+      <AnchorPane layoutX="-7.0" layoutY="-3.0" prefHeight="60.0" prefWidth="610.0" style="-fx-background-color: #008000;">
+         <children>
+            <Label layoutX="71.0" layoutY="20.0" text="Admin" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="55.0" fitWidth="50.0" layoutX="15.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/profile1-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="2.0" layoutY="60.0" prefHeight="340.0" prefWidth="150.0">
+         <children>
+            <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#f2f2f2" height="332.0" layoutY="1.0" stroke="#d7d7d7" strokeType="INSIDE" width="142.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GREEN" height="39.0" layoutX="4.0" layoutY="35.0" stroke="BLACK" strokeType="INSIDE" width="134.0" />
+            <Label alignment="CENTER" layoutX="44.0" layoutY="43.0" prefHeight="20.0" prefWidth="89.0" style="-fx-border-color: #008000;" text="Dashboard" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="31.0" fitWidth="30.0" layoutX="11.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/dashboard1.png" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GREEN" height="39.0" layoutX="4.0" layoutY="85.0" stroke="BLACK" strokeType="INSIDE" width="134.0" />
+            <Label alignment="CENTER" layoutX="39.0" layoutY="93.0" prefHeight="17.0" prefWidth="95.0" style="-fx-border-color: #008000;" text="Employee" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="31.0" fitWidth="30.0" layoutX="14.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/employee1.png" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GREEN" height="39.0" layoutX="4.0" layoutY="135.0" stroke="BLACK" strokeType="INSIDE" width="134.0" />
+            <Label alignment="CENTER" layoutX="41.0" layoutY="143.0" prefHeight="17.0" prefWidth="95.0" style="-fx-border-color: #008000;" text="Customer" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="31.0" fitWidth="30.0" layoutX="14.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/image%20(2).png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#f9fcff" height="104.0" layoutX="153.0" layoutY="63.0" stroke="#d0caca" strokeType="INSIDE" width="447.0" />
+      <Rectangle arcHeight="10.0" arcWidth="10.0" fill="GREEN" height="73.0" layoutX="170.0" layoutY="78.0" stroke="BLACK" strokeType="INSIDE" width="125.0" />
+      <Label alignment="CENTER" layoutX="172.0" layoutY="116.0" prefHeight="20.0" prefWidth="118.0" style="-fx-border-color: #008000;" text="Total Customar" textFill="WHITE" />
+      <ImageView fitHeight="31.0" fitWidth="30.0" layoutX="180.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/image%20(2).png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="238.0" layoutY="86.0" prefHeight="31.0" prefWidth="50.0" style="-fx-border-color: #008000;" text="0" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="10.0" arcWidth="10.0" fill="GREEN" height="73.0" layoutX="315.0" layoutY="78.0" stroke="BLACK" strokeType="INSIDE" width="125.0" />
+      <Label alignment="CENTER" layoutX="317.0" layoutY="116.0" prefHeight="20.0" prefWidth="118.0" style="-fx-border-color: #008000;" text="Total Employee" textFill="WHITE" />
+      <ImageView fitHeight="31.0" fitWidth="30.0" layoutX="325.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/employee1.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="383.0" layoutY="86.0" prefHeight="31.0" prefWidth="50.0" style="-fx-border-color: #008000;" text="0" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="10.0" arcWidth="10.0" fill="GREEN" height="73.0" layoutX="460.0" layoutY="78.0" stroke="BLACK" strokeType="INSIDE" width="125.0" />
+      <Label alignment="CENTER" layoutX="462.0" layoutY="116.0" prefHeight="20.0" prefWidth="118.0" style="-fx-border-color: #008000;" text="Total Income" textFill="WHITE" />
+      <ImageView fitHeight="31.0" fitWidth="30.0" layoutX="470.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/image%20(1).png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="528.0" layoutY="86.0" prefHeight="31.0" prefWidth="50.0" style="-fx-border-color: #008000;" text="0.0" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <AnchorPane layoutX="-7.0" layoutY="-3.0" prefHeight="60.0" prefWidth="610.0" style="-fx-background-color: #008000;">
+               <children>
+                  <Label fx:id="username" layoutX="71.0" layoutY="20.0" text="Admin" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="55.0" fitWidth="50.0" layoutX="15.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/profile1-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="2.0" layoutY="60.0" prefHeight="340.0" prefWidth="150.0">
+               <children>
+                  <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#f2f2f2" height="332.0" layoutY="1.0" stroke="#d7d7d7" strokeType="INSIDE" width="142.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GREEN" height="39.0" layoutX="4.0" layoutY="35.0" stroke="BLACK" strokeType="INSIDE" width="134.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Rectangle>
+                  <Label alignment="CENTER" layoutX="44.0" layoutY="43.0" prefHeight="20.0" prefWidth="89.0" style="-fx-border-color: #008000;" text="Dashboard" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="31.0" fitWidth="30.0" layoutX="11.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/dashboard1.png" />
+                     </image>
+                  </ImageView>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GREEN" height="39.0" layoutX="4.0" layoutY="85.0" onMouseClicked="#goEmployeeList" stroke="BLACK" strokeType="INSIDE" width="134.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Rectangle>
+                  <Label alignment="CENTER" layoutX="39.0" layoutY="93.0" onMouseClicked="#goEmployeeList" prefHeight="17.0" prefWidth="95.0" style="-fx-border-color: #008000;" text="Employee" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="31.0" fitWidth="30.0" layoutX="14.0" layoutY="89.0" onMouseClicked="#goEmployeeList" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/employee1.png" />
+                     </image>
+                  </ImageView>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GREEN" height="39.0" layoutX="4.0" layoutY="135.0" onMouseClicked="#goCustomerList" stroke="BLACK" strokeType="INSIDE" width="134.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Rectangle>
+                  <Label alignment="CENTER" layoutX="41.0" layoutY="143.0" onMouseClicked="#goCustomerList" prefHeight="17.0" prefWidth="95.0" style="-fx-border-color: #008000;" text="Customer" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="31.0" fitWidth="30.0" layoutX="14.0" layoutY="139.0" onMouseClicked="#goCustomerList" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/image%20(2).png" />
+                     </image>
+                  </ImageView>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GREEN" height="39.0" layoutX="4.0" layoutY="185.0" onMouseClicked="#goProductEntry" stroke="BLACK" strokeType="INSIDE" width="134.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Rectangle>
+                  <Label alignment="CENTER" layoutX="41.0" layoutY="193.0" onMouseClicked="#goProductEntry" prefHeight="17.0" prefWidth="95.0" style="-fx-border-color: #008000;" text="Product" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="31.0" fitWidth="30.0" layoutX="14.0" layoutY="189.0" onMouseClicked="#goProductEntry" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/tree.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#f9fcff" height="104.0" layoutX="153.0" layoutY="63.0" stroke="#d0caca" strokeType="INSIDE" width="447.0" />
+            <Rectangle arcHeight="10.0" arcWidth="10.0" fill="GREEN" height="73.0" layoutX="170.0" layoutY="78.0" onMouseClicked="#goCustomerList" stroke="BLACK" strokeType="INSIDE" width="125.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Rectangle>
+            <Label alignment="CENTER" layoutX="172.0" layoutY="116.0" onMouseClicked="#goCustomerList" prefHeight="20.0" prefWidth="118.0" style="-fx-border-color: #008000;" text="Total Customar" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Label>
+            <ImageView fitHeight="31.0" fitWidth="30.0" layoutX="180.0" layoutY="86.0" onMouseClicked="#goCustomerList" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/image%20(2).png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label fx:id="totalCustomer" alignment="CENTER" layoutX="238.0" layoutY="86.0" onMouseClicked="#goCustomerList" prefHeight="31.0" prefWidth="50.0" style="-fx-border-color: #008000;" text="0" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Rectangle arcHeight="10.0" arcWidth="10.0" fill="GREEN" height="73.0" layoutX="315.0" layoutY="78.0" onMouseClicked="#goEmployeeList" stroke="BLACK" strokeType="INSIDE" width="125.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Rectangle>
+            <Label alignment="CENTER" layoutX="317.0" layoutY="116.0" onMouseClicked="#goEmployeeList" prefHeight="20.0" prefWidth="118.0" style="-fx-border-color: #008000;" text="Total Employee" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Label>
+            <ImageView fitHeight="31.0" fitWidth="30.0" layoutX="325.0" layoutY="86.0" onMouseClicked="#goEmployeeList" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/employee1.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label fx:id="totalEmployee" alignment="CENTER" layoutX="383.0" layoutY="86.0" onMouseClicked="#goEmployeeList" prefHeight="31.0" prefWidth="50.0" style="-fx-border-color: #008000;" text="0" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Rectangle arcHeight="10.0" arcWidth="10.0" fill="GREEN" height="73.0" layoutX="460.0" layoutY="78.0" stroke="BLACK" strokeType="INSIDE" width="125.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Rectangle>
+            <Label alignment="CENTER" layoutX="462.0" layoutY="116.0" prefHeight="20.0" prefWidth="118.0" style="-fx-border-color: #008000;" text="Total Income" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Label>
+            <ImageView fitHeight="31.0" fitWidth="30.0" layoutX="470.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/image%20(1).png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label fx:id="totalIncome" alignment="CENTER" layoutX="503.0" layoutY="86.0" prefHeight="33.0" prefWidth="75.0" style="-fx-border-color: #008000;" text="0.0" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#fcfcfc" height="232.0" layoutX="154.0" layoutY="173.0" stroke="#d0cfcf" strokeType="INSIDE" width="447.0" />
+            <TableView fx:id="soldList" layoutX="161.0" layoutY="182.0" prefHeight="215.0" prefWidth="434.0">
+               <columns>
+                  <TableColumn fx:id="id" prefWidth="41.0" text="ID" />
+                  <TableColumn fx:id="product" prefWidth="104.0" text="Product" />
+                  <TableColumn fx:id="quantity" prefWidth="87.99993896484375" text="Quantity" />
+                  <TableColumn fx:id="price" prefWidth="83.3333740234375" text="Price" />
+                  <TableColumn fx:id="status" prefWidth="111.33334350585938" text="Status" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="39.0" fitWidth="43.0" layoutX="49.0" layoutY="347.0" onMouseClicked="#logout" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/logout.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>
